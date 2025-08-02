@@ -6,6 +6,7 @@
         "**/.DS_Store": true,
         "**/Thumbs.db": true,
         "**/target": true,
-        "**/Cargo.lock": true
+        "**/Cargo.lock": true,
+        "**/.build": true
     }
 }
