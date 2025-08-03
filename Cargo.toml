@@ -1,9 +1,12 @@
-[package]
-name = "ventukit-rs"
-version = "0.1.0"
-edition = "2024"
+[workspace]
+resolver = "3"
+members = ["debug_app", "egui_components", "iced_components"]
 
-[dependencies]
+[workspace.package]
+edition = "2024"
+version = "0.1.0"
+
+[workspace.dependencies]
 eframe = { version = "0.32.0", features = [
     "default",
     "__screenshot"
@@ -16,6 +19,8 @@ env_logger = { version = "0.11.8", default-features = false, features = [
 ] }
 
 dioxus = { version = "0.7.0-alpha.3" }
+dioxus-devtools = { version = "0.7.0-alpha.3" }
+
+iced = { version = "0.13.1" }
 
 subsecond = { version = "0.7.0-alpha.3" }
-dioxus-devtools = { version = "0.7.0-alpha.3" }

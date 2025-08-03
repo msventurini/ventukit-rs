@@ -5,7 +5,11 @@ use eframe::egui;
 
 pub use dioxus_devtools::subsecond;
 
-fn main() -> eframe::Result {
+pub mod view_template {
+    pub fn app_root() -> eframe::Result {}
+}
+
+pub fn app_root() -> eframe::Result {
     
     env_logger::init(); // Log to stderr (if you run with `RUST_LOG=debug`).
     let options = eframe::NativeOptions {
@@ -23,6 +27,25 @@ fn main() -> eframe::Result {
         }),
     )
 }
+
+// fn main() -> eframe::Result {
+    
+//     env_logger::init(); // Log to stderr (if you run with `RUST_LOG=debug`).
+//     let options = eframe::NativeOptions {
+//         viewport: egui::ViewportBuilder::default().with_inner_size([320.0, 240.0]),
+//         ..Default::default()
+//     };
+//     eframe::run_native(
+//         "My a App",
+//         options,
+//         Box::new(|cc| {
+//             // This gives us image support:
+//             egui_extras::install_image_loaders(&cc.egui_ctx);
+
+//             Ok(Box::<MyApp>::default())
+//         }),
+//     )
+// }
 
 struct MyApp {
     name: String,
@@ -65,15 +88,3 @@ impl eframe::App for MyApp {
         });
     }
 }
-
-// fn main() {
-//     // Changes to the the `for` loop will cause an unwind to this call.
-//     subsecond::call(|| {
-//         for x in 0..5 {
-//             // Changes to the `println!` will be isolated to this call.
-//             subsecond::call(|| {
-//                 println!("Hello, world! {}", x);
-//             });
-//         }
-//    });
-// }

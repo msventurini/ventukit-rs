@@ -1,6 +1,7 @@
 [package]
-name = "ventui_iced"
+name = "iced_components"
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+iced.workspace = true
