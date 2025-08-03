@@ -1,12 +1,21 @@
 [workspace]
 resolver = "3"
-members = ["debug_app", "egui_components", "iced_components"]
+members = [
+    "debug_app", 
+    "egui_components", 
+    "iced_components"
+    ]
 
 [workspace.package]
 edition = "2024"
 version = "0.1.0"
 
 [workspace.dependencies]
+
+debug_app = { path = "debug_app"}
+egui_components = { path = "egui_components"}
+iced_components = { path = "iced_components"}
+
 eframe = { version = "0.32.0", features = [
     "default",
     "__screenshot"

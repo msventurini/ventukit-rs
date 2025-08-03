@@ -5,4 +5,6 @@ edition = "2024"
 
 [dependencies]
 eframe.workspace = true
-dioxus_devtools.workspace = true
+dioxus-devtools.workspace = true
+env_logger.workspace = true
+egui_extras.workspace = true

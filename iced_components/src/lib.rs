@@ -1,6 +1,10 @@
 use iced::Center;
 use iced::widget::{Column ,button, column, text};
 
+pub mod view_template {
+    pub fn app_root() -> iced::Result {}
+}
+
 pub fn app_root() -> iced::Result {
     iced::run("My App",Counter::update, Counter::view)
 }

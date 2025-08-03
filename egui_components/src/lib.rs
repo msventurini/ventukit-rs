@@ -6,10 +6,10 @@ use eframe::egui;
 pub use dioxus_devtools::subsecond;
 
 pub mod view_template {
-    pub fn app_root() -> eframe::Result {}
+    pub fn iced_app_root() -> eframe::Result {}
 }
 
-pub fn app_root() -> eframe::Result {
+pub fn iced_app_root() -> eframe::Result {
     
     env_logger::init(); // Log to stderr (if you run with `RUST_LOG=debug`).
     let options = eframe::NativeOptions {
