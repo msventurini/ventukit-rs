@@ -1,8 +1,0 @@
-[package]
-name = "debug_app"
-version = "0.1.0"
-edition = "2024"
-
-[dependencies]
-# egui_components.workspace = true
-iced_components.workspace = true

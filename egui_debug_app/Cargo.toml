@@ -1,0 +1,10 @@
+[package]
+name = "egui_debug_app"
+edition.workspace = true
+version.workspace = true
+
+[dependencies]
+eframe.workspace = true
+dioxus-devtools.workspace = true
+env_logger.workspace = true
+egui_extras.workspace = true

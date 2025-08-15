@@ -1,0 +1,10 @@
+[package]
+name = "iced_debug_app"
+edition.workspace = true
+version.workspace = true
+
+[dependencies]
+# egui_components.workspace = true
+iced_components.workspace = true
+
+iced.workspace = true

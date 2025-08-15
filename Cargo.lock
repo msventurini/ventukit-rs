@@ -1030,13 +1030,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7046468a81e6a002061c01e6a7c83139daf91b11c30e66795b13217c2d885c8b"
 
 [[package]]
-name = "debug_app"
-version = "0.1.0"
-dependencies = [
- "iced_components",
-]
-
-[[package]]
 name = "detect-desktop-environment"
 version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1360,6 +1353,10 @@ dependencies = [
 
 [[package]]
 name = "egui_components"
+version = "0.1.0"
+
+[[package]]
+name = "egui_debug_app"
 version = "0.1.0"
 dependencies = [
  "dioxus-devtools",
@@ -2150,6 +2147,14 @@ dependencies = [
  "smol_str",
  "thiserror 1.0.69",
  "web-time",
+]
+
+[[package]]
+name = "iced_debug_app"
+version = "0.1.0"
+dependencies = [
+ "iced",
+ "iced_components",
 ]
 
 [[package]]
